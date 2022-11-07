@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: block;
+    overflow: hidden;
+}
+
+#scene {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(#9685e2, #7d9dcc);
+}
