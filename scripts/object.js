@@ -50,17 +50,17 @@ function init() {
     // Define basic scene parameters
     scene = new THREE.Scene();
     scene.background = new THREE.Color(0x9cbaad);
-    scene.fog = new THREE.Fog(0xb8d4c8, 0, 350);
+    scene.fog = new THREE.Fog(0xb8d4c8, 0, 35);
 
     // Define scene lighting
-    const light1 = new THREE.HemisphereLight(0xffffff, 0x383838, 1);
+    const light1 = new THREE.HemisphereLight(0xffffff, 0x15450f, 1);
     scene.add(light1);
 
 
-    const light = new THREE.DirectionalLight(0xf7e9bc, 4);
+    const light = new THREE.DirectionalLight(0xf7e9bc, 3);
     light.position.x = 50;
     light.position.y = 100;
-    light.position.z = -80;
+    light.position.z = -20;
     scene.add(light);
 
 
@@ -222,7 +222,7 @@ function init() {
     var mesh;
     // Load preanimated model, add material, and add it to the scene
     const loader = new GLTFLoader().load(
-        "../assets/sword-in-stone.glb",
+        "../assets/s-i-s.glb",
         function (gltf) {
             gltf.scene.traverse(function (child) {
                 if (child.isMesh) {
