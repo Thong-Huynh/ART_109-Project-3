@@ -201,7 +201,7 @@ function init() {
 
     // First Image
     // Load image as texture
-    const texture = new THREE.TextureLoader().load('../assets/sword-in-stone.jpg');
+    const texture = new THREE.TextureLoader().load('assets/sword-in-stone.jpg');
     // Immediately use the texture for material creation
     const material = new THREE.MeshBasicMaterial({
         map: texture,
@@ -222,7 +222,7 @@ function init() {
     var mesh;
     // Load preanimated model, add material, and add it to the scene
     const loader = new GLTFLoader().load(
-        "../assets/s-i-s.glb",
+        "assets/s-i-s.glb",
         function (gltf) {
             gltf.scene.traverse(function (child) {
                 if (child.isMesh) {
